@@ -1,0 +1,19 @@
+h1{
+    font-family: "Arial";
+    text-align: center;
+}
+
+
+
+body{
+    font-size: 20px;
+}
+
+#two{
+    font-size: 2.0em;
+}
+p {
+    font-family: 'NemoyBold';
+    font-weight: bold;
+    font-style: normal;
+ } 
