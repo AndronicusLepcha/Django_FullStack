@@ -104,7 +104,24 @@ function stringTimes(str, n) {
 
 function luckySum(a, b, c){
 
-  //Code Goes Here
+  if(a==13){
+    return 13
+  }
+  else if(a==13){
+    return 13
+  }
+  else if(a+b==13){
+    return 13
+  }
+  else if(c==13){
+    return a+b
+  }
+  else if(b==13){
+    return a
+  }
+  else{
+    return a+b+c
+  }
 }
 
 // PROBLEM 5:
