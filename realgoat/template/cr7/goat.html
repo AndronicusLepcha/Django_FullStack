@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOAT</title>
+</head>
+<body>
+    <h1>List of GOAT</h1>
+    {% if goat_details %}
+    {% for i in goat_details %}
+    <ol>GOAT Details
+        <ul>
+            <li>First Name:{{ i.firstname }}</li>
+            <li>Second Name:{{ i.lastname }}</li>
+            <li>Email:{{ i.email }}</li>
+        </ul>
+
+    </ol>
+    {% endfor %}
+    {% else %}
+        <p>No DATA FOUND</p>
+    {% endif %}
+</body>
+</html>

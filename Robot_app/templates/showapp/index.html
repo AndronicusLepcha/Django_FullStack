@@ -5,12 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Django Level One</title>
     <link rel="stylesheet" href="{% static "css/index.css" %}"/>
 </head>
 <body>
-    <h1>This is a Show APP template</h1>
-    <!-- {{insert_me}} -->
-    <img src="{% static "images/passphoto.jpeg" %}" alt="No photo">
+    <h1>hi! welcome to Django Level Two</h1>
+    <h2>Heree are your access records</h2>
+    <div class="djangotwo">
+        {% if access_records %}
+        <table>
+            <th>Site Name</th>
+            <th>Date Accessed</th>
+    
+        {% for acc in access_records %}
+        <tr>
+            <td>{{ acc.name }}</td>
+            <td>{{ acc.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p>No access_records found</p>
+    <!-- {% endif %} -->
+    </div>
 </body>
 </html>
