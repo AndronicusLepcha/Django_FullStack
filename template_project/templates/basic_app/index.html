@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 {% extends "basic_app/base.html" %}
 {% block body_block %}
-    <h1>Welcome to index Page</h1>
+    <div class="jumbotorn">
+        <h1>Welcome to index Page</h1>
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem culpa natus ipsa. Error molestias magnam ipsa veritatis omnis ullam repudiandae deserunt excepturi cupiditate nostrum, vel nobis dolorem, temporibus, maiores ratione.
 
     </p>
+    <p>Custom Template Example....</p>
     <h2>{{ text|cut:'Hello' }}</h2>
     <h3>{{number|add:"90"}}</h3>
+
+    <p>End of th the custom Template...</p>
+
+    <h2>
+        Django Passwords ! and Registration
+    </h2>
+    </div>
 
 {% endblock %}

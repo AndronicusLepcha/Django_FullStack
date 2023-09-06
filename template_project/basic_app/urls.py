@@ -1,11 +1,11 @@
 from django.urls import path,include
 from . import views 
 
-#template tagging
+#template urls
 
 app_name='basic_app' 
 
 urlpatterns=[
-    path('',views.relative,name='relative'),
-    path('other/',views.other,name='other'),
+    path('register/',views.register,name='register'),
+    # path('other/',views.other,name='other'),
 ]
